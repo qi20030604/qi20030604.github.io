@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-palette"></i>
+                <span>我的作品集</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#works">作品展示</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>我的创作空间</h1>
+            <p>这里展示了我近年来的设计作品和动画创作</p>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">全部作品</button>
+                <button class="category-btn" data-category="image">图片作品</button>
+                <button class="category-btn" data-category="video">动画作品</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示区域 -->
+    <section class="container" id="works">
+        <h2 class="section-title">作品展示</h2>
+        <div class="works-grid" id="worksGrid">
+            <!-- 作品将通过JavaScript动态添加 -->
+        </div>
+        <div class="loader" id="loader"></div>
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-image"></i>
+            <h3>暂无作品</h3>
+            <p>该分类下暂时没有作品，请选择其他分类。</p>
+        </div>
+    </section>
+
+    <!-- 作品详情模态框 -->
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-media-container">
+                <img class="modal-img" id="modalImg" src="" alt="作品大图">
+                <video class="modal-video" id="modalVideo" controls style="display:none;">
+                    您的浏览器不支持视频播放。
+                </video>
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+                <div class="modal-tags" id="modalTags"></div>
+                <p id="modalDate"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于我 -->
+    <section class="container" id="about">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <!-- 这里放你的头像，如果没有，可以使用默认图标 -->
+                
+                <img src="assets/images/me.png" alt="我的头像" class="avatar-img"
+                 onerror="this.onerror=null; this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2280%22%20fill%3D%22%233498db%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22105%22%20font-family%3D%22Arial%22%20font-size%3D%2230%22%20fill%3D%22white%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3E我%3C%2Ftext%3E%3C%2Fsvg%3E'">
+        </div>
+            </div>
+            <div class="about-text">
+                <h3>创意设计师 & 奇</h3>
+                <p>我是一名充满热情的设计师，专注于3D视觉艺术创作。通过使用各种设计工具，将内心的想法转化为艺术作品。</p>
+                <p>我的作品通过3D建模和动画创作了不同领域的艺术效果。每一件作品都是我内心世界的表达，也是我与观众沟通的桥梁。</p>
+                <p>在创作过程中，我注重细节、色彩和构图的和谐统一，力求作品达到令人满意的效果。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p>如果您对我的作品感兴趣，或者有合作意向，欢迎与我联系。</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-qq"></i>
+                    <div class="contact-details">
+                        <h4>QQ</h4>
+                        <p class="contact-text" id="qqText">点击查看</p>
+                        <button class="copy-btn" data-text="您的QQ号码" data-id="qq">复制</button>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-weixin"></i>
+                    <div class="contact-details">
+                        <h4>微信</h4>
+                        <p class="contact-text" id="wechatText">点击查看</p>
+                        <button class="copy-btn" data-text="您的微信号" data-id="wechat">复制</button>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-details">
+                        <h4>邮箱</h4>
+                        <p class="contact-text" id="emailText">点击查看</p>
+                        <button class="copy-btn" data-text="您的邮箱地址" data-id="email">复制</button>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© 2024-2026 个人作品集. 教程作品仅作展示. 对原创作品保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
