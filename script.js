@@ -1,12 +1,11 @@
-// 作品数据 - 这里使用相对路径指向本地文件
-// 请根据您的实际文件路径修改这些URL
+// 使用相对路径指向本地文件
+// 根据实际文件路径修改URL
 const works = [
     {
         id: 1,
         title: "AK47",
         description: "一把写实风格的AK47突击步枪",
         category: "image",
-        // 修改为您的本地图片路径
         url: "assets/images/AK47.png",
         tags: ["原创"],
         date: "2025年5月"
@@ -16,7 +15,6 @@ const works = [
         title: "笔记本电脑",
         description: "一台简约风格的笔记本电脑",
         category: "video",
-        // 修改为您的本地视频路径
         url: "assets/videos/笔记本.mp4",
         tags: ["原创"],
         date: "2025年4月"
@@ -26,7 +24,6 @@ const works = [
         title: "iphone",
         description: "一台iphone手机",
         category: "image",
-        // 修改为您的本地图片路径
         url: "assets/images/iphone.png",
         tags: ["教程"],
         date: "2025年6月"
@@ -36,7 +33,6 @@ const works = [
         title: "安全摄像头",
         description: "一个安装在墙上的安全摄像头",
         category: "image",
-        // 修改为您的本地图片路径
         url: "assets/images/安全摄像头.png",
         tags: ["教程"],
         date: "2025年6月"
@@ -46,7 +42,6 @@ const works = [
         title: "地铁花海",
         description: "唯美梦幻风格的地铁花海场景",
         category: "video",
-        // 修改为您的本地视频路径
         url: "assets/videos/地铁花海0001-0250.mp4",
         tags: ["教程"],
         date: "2025年3月"
@@ -56,7 +51,6 @@ const works = [
         title: "宝箱",
         description: "一个卡通风格的华丽宝箱",
         category: "image",
-        // 修改为您的本地图片路径
         url: "assets/images/宝箱.png",
         tags: ["原创"],
         date: "2025年5月"
@@ -66,7 +60,6 @@ const works = [
         title: "匕首",
         description: "一把写实风格的匕首",
         category: "image",
-        // 修改为您的本地图片路径
         url: "assets/images/匕首.png",
         tags: ["原创"],
         date: "2025年5月"
@@ -76,7 +69,6 @@ const works = [
         title: "飞雷之弦振",
         description: "一把酷炫的弓箭",
         category: "video",
-        // 修改为您的本地视频路径
         url: "assets/videos/飞雷0001-0180.mp4",
         tags: ["原创"],
         date: "2025年12月"
@@ -119,15 +111,6 @@ const works = [
     },
     {
         id: 13,
-        title: "科幻消失",
-        description: "酷炫的物体消失效果",
-        category: "video",
-        url: "assets/videos/科幻消失0001-0080.mp4",
-        tags: ["教程"],
-        date: "2025年4月"
-    },
-    {
-        id: 14,
         title: "湖心亭",
         description: "一个普通的湖中小亭场景",
         category: "video",
@@ -136,7 +119,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 15,
+        id: 14,
         title: "电竞椅",
         description: "一张普通的电竞椅",
         category: "image",
@@ -145,7 +128,7 @@ const works = [
         date: "2025年12月"
     },
     {
-        id: 16,
+        id: 15,
         title: "可乐",
         description: "水流环绕的可乐罐效果图",
         category: "image",
@@ -154,7 +137,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 17,
+        id: 16,
         title: "机甲",
         description: "一台酷炫的拼装机甲",
         category: "image",
@@ -163,16 +146,7 @@ const works = [
         date: "2025年6月"
     },
     {
-        id: 18,
-        title: "积木组合",
-        description: "简单的积木搭建动画",
-        category: "video",
-        url: "assets/videos/积木组合0001-0200.mp4",
-        tags: ["教程"],
-        date: "2024年11月"
-    },
-    {
-        id: 19,
+        id: 17,
         title: "可爱机器人",
         description: "一个会表情变化的可爱机器人",
         category: "video",
@@ -181,7 +155,7 @@ const works = [
         date: "2025年12月"
     },
     {
-        id: 20,
+        id: 18,
         title: "狂奔小车",
         description: "一辆向前狂奔的卡通小汽车",
         category: "video",
@@ -190,16 +164,7 @@ const works = [
         date: "2024年11月"
     },
     {
-        id: 21,
-        title: "金币基站",
-        description: "一台普通的金币烘烤机",
-        category: "image",
-        url: "assets/images/金币基站.png",
-        tags: ["教程"],
-        date: "2024年11月"
-    },
-    {
-        id: 22,
+        id: 19,
         title: "项链",
         description: "一条普通的项链",
         category: "image",
@@ -208,7 +173,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 23,
+        id: 20,
         title: "橘子",
         description: "一碗看起来十分美味的橘子",
         category: "image",
@@ -217,7 +182,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 24,
+        id: 21,
         title: "科幻仓",
         description: "酷炫的太空科幻仓场景",
         category: "image",
@@ -226,7 +191,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 25,
+        id: 22,
         title: "蓝牙耳机",
         description: "简单的蓝牙耳机展示动画",
         category: "video",
@@ -235,7 +200,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 26,
+        id: 23,
         title: "流星",
         description: "唯美动漫风格的流星雨动画",
         category: "video",
@@ -244,7 +209,7 @@ const works = [
         date: "2024年12月"
     },
     {
-        id: 27,
+        id: 24,
         title: "落日海面",
         description: "唯美风格的落日海面动画",
         category: "video",
@@ -253,16 +218,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 28,
-        title: "手机",
-        description: "简单的手机旋转动画",
-        category: "video",
-        url: "assets/videos/手机0001-0250.mp4",
-        tags: ["原创"],
-        date: "2025年3月"
-    },
-    {
-        id: 29,
+        id: 25,
         title: "手枪",
         description: "简单的手枪动画",
         category: "video",
@@ -271,7 +227,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 30,
+        id: 26,
         title: "鼠标",
         description: "酷炫的鼠标展示动画",
         category: "video",
@@ -280,7 +236,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 31,
+        id: 27,
         title: "脉动",
         description: "清爽的脉动效果图",
         category: "image",
@@ -289,16 +245,16 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 32,
-        title: "萌三兄弟",
-        description: "入门可爱几何体",
+        id: 28,
+        title: "键盘",
+        description: "酷炫的光效键盘",
         category: "image",
-        url: "assets/images/萌三兄弟.png",
-        tags: ["教程"],
-        date: "2024年11月"
+        url: "assets/images/键盘.png",
+        tags: ["原创"],
+        date: "2026年1月"
     },
     {
-        id: 33,
+        id: 29,
         title: "盆栽",
         description: "三渲二风格小盆栽",
         category: "image",
@@ -307,7 +263,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 34,
+        id: 30,
         title: "手机",
         description: "简单的手机背面效果图",
         category: "image",
@@ -316,16 +272,16 @@ const works = [
         date: "2025年6月"
     },
     {
-        id: 35,
+        id: 31,
         title: "坦克",
-        description: "一俩酷炫的坦克",
+        description: "一辆酷炫的坦克",
         category: "image",
         url: "assets/images/坦克.png",
         tags: ["原创"],
         date: "2025年7月"
     },
     {
-        id: 36,
+        id: 32,
         title: "四六级耳机",
         description: "简单的耳机旋转动画",
         category: "video",
@@ -334,16 +290,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 37,
-        title: "苏珊娜",
-        description: "几何节点科幻猴子效果",
-        category: "video",
-        url: "assets/videos/苏珊娜0001-0200.mp4",
-        tags: ["教程"],
-        date: "2024年11月"
-    },
-    {
-        id: 38,
+        id: 33,
         title: "宿舍",
         description: "简单宿舍场景",
         category: "video",
@@ -352,7 +299,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 39,
+        id: 34,
         title: "甜甜圈",
         description: "甜甜圈展示动画",
         category: "video",
@@ -361,7 +308,7 @@ const works = [
         date: "2024年11月"
     },
     {
-        id: 40,
+        id: 35,
         title: "无人机",
         description: "简易无人机效果图",
         category: "image",
@@ -370,7 +317,7 @@ const works = [
         date: "2025年7月"
     },
     {
-        id: 41,
+        id: 36,
         title: "相机",
         description: "一台普通的照相机",
         category: "image",
@@ -379,7 +326,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 42,
+        id: 37,
         title: "香水",
         description: "一瓶奢华的蓝色香水瓶效果",
         category: "image",
@@ -388,7 +335,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 43,
+        id: 38,
         title: "香水",
         description: "一瓶奢华的香水瓶效果",
         category: "image",
@@ -397,7 +344,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 44,
+        id: 39,
         title: "头戴耳机",
         description: "一段简单的头戴耳机展示动画",
         category: "video",
@@ -406,7 +353,7 @@ const works = [
         date: "2025年12月"
     },
     {
-        id: 45,
+        id: 40,
         title: "头盔",
         description: "一个酷炫的头盔旋转动画",
         category: "video",
@@ -415,7 +362,7 @@ const works = [
         date: "2025年12月"
     },
     {
-        id: 46,
+        id: 41,
         title: "小狐狸",
         description: "林中小狐狸入门教程动画",
         category: "video",
@@ -424,7 +371,7 @@ const works = [
         date: "2024年10月"
     },
     {
-        id: 47,
+        id: 42,
         title: "星空之城",
         description: "星空之城概念动画",
         category: "video",
@@ -433,7 +380,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 48,
+        id: 43,
         title: "行星",
         description: "酷炫的行星动画",
         category: "video",
@@ -442,7 +389,7 @@ const works = [
         date: "2025年6月"
     },
     {
-        id: 49,
+        id: 44,
         title: "烟花",
         description: "烟花炸开效果",
         category: "video",
@@ -451,7 +398,7 @@ const works = [
         date: "2025年12月"
     },
     {
-        id: 50,
+        id: 45,
         title: "爱莉的生日蛋糕",
         description: "我永远喜欢爱莉希雅",
         category: "video",
@@ -460,7 +407,7 @@ const works = [
         date: "11月11日是人家的生日哦🎶"
     },
     {
-        id: 51,
+        id: 46,
         title: "小机器人",
         description: "简单的小机器人",
         category: "image",
@@ -469,7 +416,7 @@ const works = [
         date: "2025年7月"
     },
     {
-        id: 52,
+        id: 47,
         title: "眼镜",
         description: "一副简单的眼镜",
         category: "image",
@@ -478,7 +425,7 @@ const works = [
         date: "2025年3月"
     },
     {
-        id: 53,
+        id: 48,
         title: "泳池",
         description: "写实风格的泳池场景",
         category: "image",
@@ -487,25 +434,16 @@ const works = [
         date: "2024年12月"
     },
     {
-        id: 54,
-        title: "油桶",
-        description: "叙利亚战损版油桶",
+        id: 49,
+        title: "科幻仓",
+        description: "简单科幻场景",
         category: "image",
-        url: "assets/images/油桶.png",
-        tags: ["教程"],
-        date: "2025年5月"
+        url: "assets/images/科幻仓SS.png",
+        tags: ["原创"],
+        date: "2026年1月"
     },
     {
-        id: 55,
-        title: "足球",
-        description: "一个简单的足球",
-        category: "image",
-        url: "assets/images/足球.png",
-        tags: ["教程"],
-        date: "2025年4月"
-    },
-    {
-        id: 56,
+        id: 50,
         title: "樱花小道",
         description: "唯美风格樱花场景",
         category: "video",
@@ -514,7 +452,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 57,
+        id: 51,
         title: "游戏手柄",
         description: "简单的游戏手柄展示动画",
         category: "video",
@@ -523,7 +461,7 @@ const works = [
         date: "2025年4月"
     },
     {
-        id: 58,
+        id: 52,
         title: "走路机器人",
         description: "简单走路机器人动画",
         category: "video",
@@ -532,25 +470,16 @@ const works = [
         date: "2024年11月"
     },
     {
-        id: 59,
-        title: "子弹冲击",
-        description: "简单子弹冲击物理模拟动画",
-        category: "video",
-        url: "assets/videos/子弹冲击0001-0100.mp4",
-        tags: ["教程"],
-        date: "2024年11月"
-    },
-    {
-        id: 60,
+        id: 53,
         title: "战斗机",
-        description: "清朝战斗机泄密视频流出",
+        description: "乾隆年间F666战斗机泄密视频流出",
         category: "video",
         url: "assets/videos/战斗机20001-0510.mp4",
         tags: ["原创"],
         date: "2025年8月"
     },
     {
-        id: 61,
+        id: 54,
         title: "美食",
         description: "你的晚餐",
         category: "image",
@@ -559,7 +488,7 @@ const works = [
         date: "2025年5月"
     },
     {
-        id: 62,
+        id: 55,
         title: "池核",
         description: "池核恐怖场景",
         category: "video",
