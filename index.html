@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>设计作品集</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="motion-background">
+    <div class="shape capsule"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+    <div class="shape square"></div>
+    <div class="shape capsule"></div>
+    <div class="shape ball"></div>
+  </div>
+  <header class="page-header">
+    <nav class="top-nav">
+      <a href="#imageSection">图片作品</a>
+      <a href="#videoSection">视频作品</a>
+      <a href="#contact">联系合作</a>
+    </nav>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">奇 · 视觉与影像作品集</p>
+        <h1>以专业设计与影像表达，打造高品质品牌视觉展示。</h1>
+        <p class="hero-description">这里汇集了我的图片与视频作品，使用 Blender、Photoshop、Premiere、After Effects 等打造而成。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#imageSection">查看图片</a>
+          <a class="button button-secondary" href="#videoSection">查看视频</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-frame">
+          <video id="heroVideo" autoplay muted loop playsinline preload="auto" class="hero-cover">
+            <source src="videos/蓝牙耳机.mp4" type="video/mp4" />
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+        <div class="hero-caption">
+          <span class="hero-label">形·色·光 — 构建有感知的视觉体验</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <nav class="category-bar">
+      <button id="tabImages" class="category-tab active" type="button">图片作品</button>
+      <button id="tabVideos" class="category-tab" type="button">视频作品</button>
+    </nav>
+    <section id="imageSection" class="media-section">
+      <div class="section-header">
+        <div>
+          <p class="section-label">图片分类</p>
+          <h2>设计图片</h2>
+        </div>
+        <p class="section-note">图片作品精选呈现。</p>
+      </div>
+      <div class="gallery-grid" id="imageGallery"></div>
+    </section>
+    <section id="videoSection" class="media-section">
+      <div class="section-header">
+        <div>
+          <p class="section-label">视频分类</p>
+          <h2>设计视频</h2>
+        </div>
+        <p class="section-note">视频作品精选呈现。</p>
+      </div>
+      <div class="gallery-grid" id="videoGallery"></div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <div>
+          <p class="section-label">联系合作</p>
+          <h2>一起把下一个项目做到更好</h2>
+        </div>
+      </div>
+      <div class="contact-card">
+        <p>如需品牌、插画、产品渲染或短视频视觉表达，欢迎与我联系。</p>
+        <ul class="contact-list">
+          <li><strong>邮箱：</strong>3257602454@qq.com</li>
+          <li><strong>微信：</strong>Elysia0604</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p>© 2026 奇的设计作品集 部分作品非原创</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
